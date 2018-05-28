@@ -45,11 +45,11 @@ client:
   # The amount of RAM allocated to the JVM heap. This should be set to the
   # same value as client.resources.requests.memory, or you may see
   # OutOfMemoryErrors on startup.
-  heapMemory: 1000m
+  heapMemory: 512m
 
   resources:
     requests:
-      memory: 1000Mi
+      memory: 512Mi
 
   env:
     NODE_DATA: "false"
@@ -72,11 +72,11 @@ data:
   # The amount of RAM allocated to the JVM heap. This should be set to the
   # same value as data.resources.requests.memory, or you may see
   # OutOfMemoryErrors on startup.
-  heapMemory: 1000m
+  heapMemory: 512m
 
   resources:
     requests:
-      memory: 1000Mi
+      memory: 512Mi
 
   env:
     NODE_DATA: "true"
@@ -104,11 +104,11 @@ master:
   # The amount of RAM allocated to the JVM heap. This should be set to the
   # same value as master.resources.requests.memory, or you may see
   # OutOfMemoryErrors on startup.
-  heapMemory: 1000m
+  heapMemory: 512m
 
   resources:
     requests:
-      memory: 1000Mi
+      memory: 512Mi
 
   env:
     NODE_DATA: "false"
