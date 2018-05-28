@@ -27,7 +27,7 @@ common:
   # If enabled, then the data and master nodes will be StatefulSets with
   # associated persistent volume claims.
   stateful:
-    enabled: true
+    enabled: false
 
     # The PVC storage class that backs the persistent volume claims. On AWS
     # "gp2" would be appropriate.
@@ -45,11 +45,11 @@ client:
   # The amount of RAM allocated to the JVM heap. This should be set to the
   # same value as client.resources.requests.memory, or you may see
   # OutOfMemoryErrors on startup.
-  heapMemory: 3000m
+  heapMemory: 1000m
 
   resources:
     requests:
-      memory: 3000Mi
+      memory: 1000Mi
 
   env:
     NODE_DATA: "false"
@@ -72,11 +72,11 @@ data:
   # The amount of RAM allocated to the JVM heap. This should be set to the
   # same value as data.resources.requests.memory, or you may see
   # OutOfMemoryErrors on startup.
-  heapMemory: 5000m
+  heapMemory: 1000m
 
   resources:
     requests:
-      memory: 5000Mi
+      memory: 1000Mi
 
   env:
     NODE_DATA: "true"
@@ -104,11 +104,11 @@ master:
   # The amount of RAM allocated to the JVM heap. This should be set to the
   # same value as master.resources.requests.memory, or you may see
   # OutOfMemoryErrors on startup.
-  heapMemory: 3000m
+  heapMemory: 1000m
 
   resources:
     requests:
-      memory: 3000Mi
+      memory: 1000Mi
 
   env:
     NODE_DATA: "false"
