@@ -27,7 +27,7 @@ common:
   # If enabled, then the data and master nodes will be StatefulSets with
   # associated persistent volume claims.
   stateful:
-    enabled: false
+    enabled: true
 
     # The PVC storage class that backs the persistent volume claims. On AWS
     # "gp2" would be appropriate.
